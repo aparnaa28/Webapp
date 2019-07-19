@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script> <!--client side library-->
+    <script src="script.js"></script>
+
+    <style>
+        
+        #loginbutton:hover{
+            background-color: green;
+        }
+
+        #sendmsg:active{
+            background-color: chartreuse;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center">Realtime chatting webapp </h1>
+    <br>
+    <br>
+
+    <div id="logindiv" style="text-align: center">
+        <input type="text" placeholder="username" id="login">
+        <br>
+        <br>
+        <button id="loginbutton" >LOGIN</button>   
+     </div>
+     <div id="chatdiv" style="display:none">
+            <input type="text" id="msgbox">
+            <button id="sendmsg">Send</button>
+            <ul id="msglist"></ul>
+     </div>
+   
+</body>
+</html>
